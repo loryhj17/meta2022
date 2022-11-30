@@ -1,0 +1,284 @@
+<html lang="ko">
+<head>
+<style type="text/css">
+	* {
+		color: #333333;
+	    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	    /*font-family: 'Gamja Flower', cursive;
+	    font-family: 'Nanum Pen Script', cursive;*/
+	}
+	
+	hr {
+		border-top:1px solid #bbb;
+	}
+	p {
+		font-size: 17px;
+  		font-family: Helvetica, Arial, sans-serif;
+	}
+	.main_text {
+		font-size: 50px;
+	}
+	.collection {
+		font-size: 25px;}
+		
+	.copyright {
+		font-size: 13px;
+		font-weight: bold;
+		background-color:#000000;
+		color:white;
+		font-family: Helvetica, Arial, sans-serif;
+		text-align:center;
+		padding: 20px 70px 20px 30px;
+	}
+	
+	.fmenuall{
+		background-color:#ffffff;
+		color:white;
+	
+	}
+	
+	li {
+  		list-style-type: none;
+		}	
+	/*.fmenuBox li {
+		list-style-type:none;
+		}*/		
+	
+	#crHeader{width:1200px; margin:0 auto;}
+	
+	.crG {
+		text-align : center;
+		font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, Dongle, serif;
+	}
+	
+	.crG li {
+	    display:inline;
+	    padding: 20px 70px 20px 30px;
+	    margin: 10px 0px 10px 0px;
+	}
+	li:first-child {
+		border-left: none;
+	}
+	
+	.main_list{
+	    display:inline;
+		text-align : right;
+		font-size: 15px;
+		color: #333333;
+	}
+	
+	a {
+	  text-decoration-line: none;
+	/*   text-decoration-line: underline; */
+	/*   text-decoration-line: overline; */
+	/*   text-decoration-line: line-through; */
+	/*   text-decoration-line: underline line-through overline; */
+}
+	a .kr{
+		display:none;
+	}
+	
+	a:hover{
+		background:#dfdfdf;	
+	}
+	
+	a#atitle:hover{
+		background:#FFFFFF;	
+	}
+	
+	.searchbox{
+		padding: 20px 0px 0px 330px;
+	}
+	
+	.searchResult{
+		padding: 20px 0px 0px 350px;
+	}
+</style>
+<style>
+	.searchLi {position:relative;}
+    .search_header {position: absolute; right: 80px; top: -15px;}
+</style>
+
+<script>
+$( "#r_search, .close_btn" ).click(function() {
+$( ".search_header" ).toggle();
+});
+$( ".search_header #keyword").attr('placeholder','searching');
+</script>
+
+<title>주얼리쇼핑몰</title>
+<meta name="path_role" content="MAIN">
+<meta name="author" content="loryhj">
+<meta name="description" content="jewelry">
+<meta name="keywords" content="은,은팔찌,은반지,은귀걸이,은목걸이,실버귀걸이,실버링,실버이어링,실버목걸이,귀걸이,반지,목걸이,팔찌,발찌,네크리스,링,이어링,주얼리,ring,rings,necklace,necklaces,earring,earrings,bracelets,bracelet,jewelry,silver">
+<body id="main" onload="showImage()"> 
+<div id="wrap">
+	<div class="main_text">
+    	<a id="atitle" href="./index.html"><span><center>jewelry brands</span></a>
+        <ul class="main_list">
+        	<li class="searchLi">
+               	<a id="r_search">
+                <span class="en">SEARCH</span>
+                <span class="kr">검색</span>
+            	</a>
+                <!--오른쪽 상단 검색창-->
+                <form id="searchBarForm" name="" action="./search.html" method="get" target="_self" enctype="multipart/form-data">
+					<div class="search_header ">
+					<fieldset>
+					<input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="searching" value="" type="text">
+					<a href="./search.html">
+					<img src="./img/search-icon.png" width="20px"></a>
+					</fieldset>
+					</div>
+				</form>  					
+		</ul>
+	</div>
+	<div><span>&nbsp;</span></div>
+	<div id="crHeader">
+	<ul class="crG">
+		<li><a id="nav_earrings" href="./earring.html">
+			<span class="en">EARRINGS</span>
+			<span class="kr">이어링</span>
+            </a></li>
+		<li><a id="nav_necklaces" href="./necklace.html">
+			<span class="en">NECKLACES</span>
+            <span class="kr">네크리스</span>
+            </a></li>
+		<li><a id="nav_bracelets" href="./bracelet.html">
+                <span class="en">BRACELETS</span>
+                <span class="kr">브레이슬릿</span>
+            </a></li>
+		<li><a id="nav_rings" href="./ring.html">
+                <span class="en">RINGS</span>
+                <span class="kr">링</span>
+            </a></li>
+		<li><a id="nav_anklets" href="#">
+                <span class="en">ANKLETS</span>
+                <span class="kr">앵클릿</span>
+            </a></li>
+	</ul>
+	</div>
+</div>
+<br>
+</style>
+
+<form id="searchForm" name="" action="./search.html" method="get" target="_self" enctype="multipart/form-data">
+<input id="view_type" name="view_type" value="" type="hidden">
+<input id="supplier_code" name="supplier_code" value="" type="hidden">
+<div class="searchbox" style="width:500px;">
+        <fieldset>
+		<legend>상품 검색</legend>
+            <table>
+            <tbody>
+            <tr class="half">
+				<th class="item">상품분류</th>
+				<td style="border-right:1px solid #666;"><select id="category_no" name="category_no" fw-filter="" fw-label="" fw-msg="">
+				<option value="0" selected="selected">상품분류 선택</option>
+				<option value="29">earrings</option>
+				<option value="28">necklaces</option>
+				<option value="31">bracelets</option>
+				<option value="30">rings</option>
+				<option value="48">anklets</option>
+				</select></td>
+                <th class="item">검색정렬기준</th>
+				<td><select id="order_by" name="order_by" fw-filter="" fw-label="검색정렬기준" fw-msg="">
+				<option value="" selected="selected">::: 기준선택 :::</option>
+				<option value="recent">신상품 순</option>
+				<option value="name">상품명순</option>
+				<option value="priceasc">낮은가격 순</option>
+				<option value="price">높은가격 순</option>
+				<option value="manu_name">제조사 순</option>
+				<option value="review">사용후기 순</option>
+				</select></td>
+            </tr></tbody>
+        	</table>
+
+			<table>
+			<tbody><tr>
+				<th class="item">가격</th>
+				<td><input id="product_price1" name="product_price1" fw-filter="isNumber" fw-label="최소판매가격" fw-msg="" class="input01" placeholder="" size="15" value="" type="text"> ~ <input id="product_price2" name="product_price2" fw-filter="isNumber" fw-label="최대판매가격" fw-msg="" class="input01" placeholder="" size="15" value="" type="text"></td>
+				</tr>
+				<tr>
+				<th class="item">검색조건</th>
+				                <td>
+				                    <select id="search_type" name="search_type" fw-filter="" fw-label="상품검색" fw-msg="">
+									<option value="product_name">상품명</option>
+									</select>                    
+									<input id="keyword" name="keyword" fw-filter="" fw-label="상품명/제조사" fw-msg="" class="inputTypeText" placeholder="" size="15" value="" type="text">                     <div class="popular" id="except_keyword_wrap_id" style="">
+			                </td>
+				</tr>
+			</tbody></table>
+
+			<div class="btnArea"><button type="submit" class="btn1">검색</button></div>
+			        </fieldset>
+			</div>
+			
+		<div class="searchResult">
+        <p class="record">총 <strong>0</strong> 개 의 상품이 검색되었습니다.</p>
+        </div>
+</div>
+</form>
+    
+<hr>
+<footer class="footerlist">
+<div class="fmenuall">
+	<ul class="fmenuBox">
+		<li>
+           <span class="fmenuTitle">CUSTOMER SERVICE</span>
+           <ul class="fmenuList">
+				<li><a href="./as.html"><span style="font-family: 'Noto Sans KR', sans-serif;">A/S 안내</span></a></li>
+                <li><a href="./refund.html"><span style="font-family: 'Noto Sans KR', sans-serif;">교환 및 반품 안내</span></a></li>
+           </ul>
+		</li>
+		<li><span>&nbsp;</span></li>
+		<li>
+            <span class="fmenucontact">CONTACT</span>
+			<ul class="fmenuList">
+				<li>
+                   <span style="font-family: 'Noto Sans KR', sans-serif;">02-900-1234</span>
+                </li>
+            </ul>
+        </li>
+	</ul>
+</div>
+<hr>
+<div class="copyright">
+	<span style="font-family: 'Noto Sans KR', sans-serif;color:#FFFFFF">
+	loryhj
+	<br>통신판매신고번호 : 2022-0000-0269 | 
+	사업자등록번호 : 000-11-30000 | 
+	주소 : 서울시 노원구 공릉동  </span>
+	<br> Copyright ⓒ 2022 loryhj. All Rights Reserved.
+</div>
+</footer>
+<script>
+
+    function product_click(id,link){
+        //var position = products.findIndex(item=>item.id == id);
+        var position;
+        for (var i = 0; i < products.length; ++i) {
+            if (products[i].id == id) {
+                position = i;
+                break;
+            }
+        }
+        var list = 'search';
+        price = remove_comma(price);
+
+        var productClick = {
+            'click': {
+                'actionField': {'list': list},
+                'products': [products[position]]
+            }
+        };
+        dataLayer.push({
+            'event': 'productClick',
+            'ecommerce':productClick,
+            'eventCallback': function() {
+                document.location = link
+            }
+        });
+    };
+</script>
+</body>
+</html>

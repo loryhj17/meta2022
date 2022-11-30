@@ -1,0 +1,349 @@
+<html lang="ko">
+<head>
+<style type="text/css">
+	* {
+		color: #333333;
+	    font-family: 'Palatino Linotype', 'Book Antiqua', 'Noto Sans KR', Palatino, serif;
+	}	
+	
+	hr {
+		border-top:1px solid #bbb;
+	}
+	p {
+		font-size: 17px;
+	}
+	
+	.main_text {
+		font-size: 50px;
+		color: #333333;
+	}
+	.collection {
+		font-size: 25px;}
+		
+	.copyright {
+		font-size: 13px;
+		font-weight: bold;
+		background-color:#000000;
+		color:white;
+		text-align:center;
+		padding: 20px 70px 20px 30px;
+	}
+	
+	.fmenuall{
+		background-color:#ffffff;
+		color:white;
+	}
+	
+	li {
+  		list-style-type: none;
+		}	
+	/*.fmenuBox li {
+		list-style-type:none;
+		}*/		
+	
+	#crHeader{width:1200px; margin:0 auto;}
+	
+	.crG {
+		color: #333333;
+		text-align : center;
+	}
+	
+	.crG li {
+	    display:inline;
+	    padding: 20px 70px 20px 30px;
+	    margin: 10px 0px 10px 0px;
+	    
+	}
+	
+	.web_earring_lnb{
+		text-indent:100px;	
+		
+	}
+	
+	.web_earring_lnb li{
+		display:inline;
+		padding: 50px 0px 10px 0px;
+	    margin: 10px 0px 10px 70px;
+	}
+	
+	li:first-child {
+		border-left: none;
+	}
+	
+	.main_list{
+	    display:inline;
+		text-align : right;
+		font-size: 15px;
+		color: #333333;
+		
+	}
+	
+	a {
+	  text-decoration-line: none;
+	/*   text-decoration-line: underline; */
+	/*   text-decoration-line: overline; */
+	/*   text-decoration-line: line-through; */
+	/*   text-decoration-line: underline line-through overline; */
+}
+	a .kr{
+		display:none;
+	}
+	
+	a:hover{
+		background:#dfdfdf;	
+	}
+	
+	a#atitle:hover{
+		background:#FFFFFF;	
+	}
+	
+	.product {
+		margin: 10px 0px 0px 100px;
+		position: relative;
+	}
+	
+	.txtBox {
+			positoion: absolute;
+			top: 40%;
+			left: 30%;
+			width: 100%;
+			transform: translate(40%, -150%);
+		font-family: 'Rajdhani', sans-serif;
+		font-size: 15px;
+		text-align:center;
+	}
+	
+	.txtBox2 {
+			positoion: absolute;
+			top: 40%;
+			left: 30%;
+			width: 100%;
+			transform: translate(200%, -250%);
+		font-family: 'Rajdhani', sans-serif;
+		font-size: 15px;
+		text-align:center;
+	}
+	
+	.txtBox3 {
+			positoion: absolute;
+			top: 40%;
+			left: 30%;
+			width: 100%;
+			transform: translate(370%, -350%);
+		font-family: 'Rajdhani', sans-serif;
+		font-size: 15px;
+		text-align:center;
+	}
+	
+	.txtBox4 {
+			positoion: absolute;
+			top: 40%;
+			left: 30%;
+			width: 100%;
+			transform: translate(540%, -450%);
+		font-family: 'Rajdhani', sans-serif;
+		font-size: 15px;
+		text-align:center;
+	}
+	
+	.rosegold{
+		font-weight: bold;
+	}
+	
+	.line {
+		text-decoration: line-through;
+	}
+</style>
+<style>
+	.searchLi {position:relative;}
+    .search_header {position: absolute; right: 80px; top: -15px;}
+</style>
+
+<script>
+$( "#r_search, .close_btn" ).click(function() {
+$( ".search_header" ).toggle();
+});
+$( ".search_header #keyword").attr('placeholder','searching');
+</script>
+
+<title>주얼리쇼핑몰</title>
+<meta name="path_role" content="MAIN">
+<meta name="author" content="loryhj">
+<meta name="description" content="jewelry">
+<meta name="keywords" content="은,은팔찌,은반지,은귀걸이,은목걸이,실버귀걸이,실버링,실버이어링,실버목걸이,귀걸이,반지,목걸이,팔찌,발찌,네크리스,링,이어링,주얼리,ring,rings,necklace,necklaces,earring,earrings,bracelets,bracelet,jewelry,silver">
+<body id="main" onload="showImage()"> 
+<div id="wrap">
+	<div class="main_text">
+    	<a id="atitle" href="./index.html"><span><center>jewelry brands</span></a>
+        <ul class="main_list">
+        	<li class="searchLi">
+               	<a id="r_search">
+                <span class="en">SEARCH</span>
+                <span class="kr">검색</span>
+            	</a>
+                <!--오른쪽 상단 검색창-->
+                <form id="searchBarForm" name="" action="./search.html" method="get" target="_self" enctype="multipart/form-data">
+					<div class="search_header ">
+					<fieldset>
+					<input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="searching" value="" type="text">
+					<a href="./search.html">
+					<img src="./img/search-icon.png"  width="20px"></a>
+					</fieldset>
+					</div>
+				</form>  					
+		</ul>
+	</div>
+	
+	<div><span>&nbsp;</span></div>
+	<div id="crHeader">
+	<ul class="crG">
+		<li><a id="nav_earrings" href="./earring.html">
+			<span class="en">EARRINGS</span>
+			<span class="kr">이어링</span>
+            </a></li>
+		<li><a id="nav_necklaces" href="./necklace.html">
+			<span class="en">NECKLACES</span>
+            <span class="kr">네크리스</span>
+            </a></li>
+		<li><a id="nav_bracelets" href="./bracelet.html">
+                <span class="en">BRACELETS</span>
+                <span class="kr">브레이슬릿</span>
+            </a></li>
+		<li><a id="nav_rings" href="./ring.html">
+                <span class="en">RINGS</span>
+                <span class="kr">링</span>
+            </a></li>
+		<li><a id="nav_anklets" href="#">
+                <span class="en">ANKLETS</span>
+                <span class="kr">앵클릿</span>
+            </a></li>
+	</ul>
+	</div>
+	
+
+</div>
+
+<div class="wrap960trans scroller" >        
+    <div class="web_earring_lnb_div" style="background:#000000; height:30px;" >            
+        <ul class="web_earring_lnb">
+        	<li>
+                <a href="./earring.html"><span style="font-family: 'Noto Sans KR', sans-serif;color:#FFFFFF;">원터치</span></a>
+            </li>
+            <li>
+                <a href="./stud.html"><span style="font-family: 'Noto Sans KR', sans-serif;color:#FFFFFF;">스터드</span></a>
+            </li>
+            <li>
+                <a href="./hoop.html"><span style="font-family: 'Noto Sans KR', sans-serif;color:#FFFFFF;">후프</span></a>
+            </li>
+            <li>
+                <a href="./drop.html"><span style="font-family: 'Noto Sans KR', sans-serif;color:#FFFFFF;">드롭</span></a>
+            </li>
+            <li>
+                <a href="./cuff.html"><span style="font-family: 'Noto Sans KR', sans-serif;color:#FFFFFF;">이어커프</span></a>
+            </li>
+            <li>
+                <a href="./piercing.html"><span style="font-family: 'Noto Sans KR', sans-serif;color:#FFFFFF;">피어싱</span></a>
+            </li>
+        </ul></div> 
+    </div>
+</div>
+
+<!-- 일반상품 -->
+<div class="product" style="height:300px;">
+	<div class="imgBox">
+			<img src="./img/hp1.JPG" width="250px" height="300px">
+			<img src="./img/hp2.JPG" width="250px" height="300px">
+			<img src="./img/hp3.JPG" width="250px" height="300px">
+			<img src="./img/hp4.JPG" width="250px" height="300px">
+	</div>
+	<div class="txtBox" style="height:auto; width: 150px;">
+		<span class="rosegold">Rose Gold</span><br>
+        <span>BEADED 16</span><br>
+        <span class="line" style="color:gray;">30% OFF</span>
+        <span class="fcb">￦28,500 </span>
+	</div>
+	<div class="txtBox2" style="height:auto; width: 150px;">
+		<span class="rosegold">Rose Gold</span><br>
+        <span>ERICA</span><br> 
+        <span class="line" style="color:gray;">20% OFF</span>
+        <span class="fcb">￦28,800 </span>
+	</div> 
+	<div class="txtBox3" style="height:auto; width: 150px;">
+		<span class="rosegold">Rose Gold</span><br>
+        <span>4 CUBIC PEARL</span></br> 
+        <span class="line" style="color:gray;">35% OFF</span>
+        <span class="fcb">￦24,800 </span>
+	</div> 
+	<div class="txtBox4" style="height:auto; width: 150px;">
+		<span class="rosegold">Rose Gold</span><br>
+        <span>MINI BOLD 11</span><br> 
+        <span class="line" style="color:gray;">15% OFF</span>
+        <span class="fcb">￦32,700 </span>
+	</div>   
+</div>
+<div class="product" style="height:300px;">
+	<div class="imgBox">
+			<img src="./img/hp5.JPG" width="250px" height="300px">
+			<img src="./img/hp6.JPG" width="250px" height="300px">
+			<img src="./img/hp7.JPG" width="250px" height="300px">
+			<img src="./img/hp8.JPG" width="250px" height="300px">
+	</div>
+	<div class="txtBox" style="height:auto; width: 150px;">
+		<span class="rosegold">Rose Gold</span><br>
+        <span>SIMPLE LINE</span><br>
+        <span class="line" style="color:gray;">35% OFF</span>
+        <span class="fcb">￦33,800 </span>
+	</div>
+	<div class="txtBox2" style="height:auto; width: 150px;">
+		<span class="rosegold">Rose Gold</span><br>
+        <span>WIDE HOOP 20</span><br> 
+        <span class="line" style="color:gray;">20% OFF</span>
+        <span class="fcb" style="font-family: 'Noto Sans KR', sans-serif;">*품절</span>
+	</div> 
+	<div class="txtBox3" style="height:auto; width: 150px;">
+		<span class="rosegold">Rose Gold</span><br>
+        <span>PRINCESS QUARTER</span></br> 
+        <span class="line" style="color:gray;">25% OFF</span>
+        <span class="fcb">￦23,700 </span>
+	</div> 
+	<div class="txtBox4" style="height:auto; width: 150px;">
+		<span class="rosegold">Rose Gold</span><br>
+        <span>HALF DROP HOOP</span><br> 
+        <span class="line" style="color:gray;">45% OFF</span>
+        <span class="fcb">￦25,800 </span>
+	</div>   
+</div>
+<hr>
+<footer class="footerlist">
+<div class="fmenuall">
+	<ul class="fmenuBox">
+		<li>
+           <span class="fmenuTitle">CUSTOMER SERVICE</span>
+           <ul class="fmenuList">
+				<li><a href="./as.html"><span style="font-family: 'Noto Sans KR', sans-serif;">A/S 안내</span></a></li>
+                <li><a href="./refund.html"><span style="font-family: 'Noto Sans KR', sans-serif;">교환 및 반품 안내</span></a></li>
+           </ul>
+		</li>
+		<li><span>&nbsp;</span></li>
+		<li>
+            <span class="fmenucontact">CONTACT</span>
+			<ul class="fmenuList">
+				<li>
+                   <span style="font-family: 'Noto Sans KR', sans-serif;">02-900-1234</span>
+                </li>
+            </ul>
+        </li>
+	</ul>
+</div>
+<hr>
+<div class="copyright">
+	<span style="font-family: 'Noto Sans KR', sans-serif;color:#FFFFFF">
+	loryhj
+	<br>통신판매신고번호 : 2022-0000-0269 | 
+	사업자등록번호 : 000-11-30000 | 
+	주소 : 서울시 노원구 공릉동  </span>
+	<br> Copyright ⓒ 2022 loryhj. All Rights Reserved.
+</div>
+</footer>
+
+</body></html>
